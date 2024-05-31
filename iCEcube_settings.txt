@@ -1,0 +1,22 @@
+use these settings for every project in iCEcube
+settings are specific to the Go Board
+
+most settings are already there by default, the ones in asterisks are what you should pay attention to
+
+************************
+Device Family: iCE40
+Device: HX1K
+Device Package: VQ100
+
+Temperature Range: Commercial
+*******************************
+
+Core Voltage Tolerance Range: +/-5%
+
+********************************
+IOBank Voltage (all): 3.3 V
+********************************
+
+Perform timing analysis based on: Worst
+
+Start From: Synthesis
