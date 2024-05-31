@@ -1,0 +1,7 @@
+C:\lscc\iCEcube2.2020.12\synpbase\bin64\syn_nfilter.exe  -link  -multisrs  "C:\Users\winst\Documents\UVA\ASTR Research\nandland-go-tutorials\project1-led-blink\project1\project1_Implmnt\synwork\project1_comp.srs"  -osyn  "C:\Users\winst\Documents\UVA\ASTR Research\nandland-go-tutorials\project1-led-blink\project1\project1_Implmnt\synwork\project1_mult.srs"  -log  "C:\Users\winst\Documents\UVA\ASTR Research\nandland-go-tutorials\project1-led-blink\project1\project1_Implmnt\synlog\project1_multi_srs_gen.srr" 
+rc:0 success:1 runtime:1
+file:C:\Users\winst\Documents\UVA\ASTR Research\nandland-go-tutorials\project1-led-blink\project1\project1_Implmnt\synwork\project1_comp.srs|io:i|time:1717121550|size:1711|exec:0
+file:C:\Users\winst\Documents\UVA\ASTR Research\nandland-go-tutorials\project1-led-blink\project1\project1_Implmnt\synwork\project1_mult.srs|io:o|time:1717121552|size:1437|exec:0
+file:C:\Users\winst\Documents\UVA\ASTR Research\nandland-go-tutorials\project1-led-blink\project1\project1_Implmnt\synlog\project1_multi_srs_gen.srr|io:o|time:1717121552|size:969|exec:0
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin\syn_nfilter.exe|io:i|time:1712936805|size:3128320|exec:1
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin64\syn_nfilter.exe|io:i|time:1712936807|size:3947520|exec:1
