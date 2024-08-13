@@ -8,7 +8,7 @@ entity And_Gate_Project is
         i_Switch_2 : in std_logic;
 
         -- LED
-        o_LED_1 : out std_logic;
+        o_LED_1 : out std_logic
     );
 end entity And_Gate_Project;
 
