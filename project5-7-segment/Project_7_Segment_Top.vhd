@@ -4,9 +4,13 @@ use ieee.numeric_std.all;
 
 entity Project_7_Segment_Top is
     port (
+        -- Main clock 25 Mhz
         i_Clk       : in std_logic;
-        iSwitch_1   : in std_logic;
+        
+        -- Input switch
+        i_Switch_1   : in std_logic;
 
+        -- Segment 2 is the display on the right side of the Go Board
         o_Segment2_A : out std_logic;
         o_Segment2_B : out std_logic;
         o_Segment2_C : out std_logic;
@@ -39,19 +43,21 @@ begin
             i_Clk       => i_Clk,
             i_Switch    => i_Switch_1,
 
-            o_switch    => w_Switch1
+            o_switch    => w_Switch_1
         );
 
+    -- When switch is pressed, increment counter, reset counter at 9
     p_Switch_Count : process (i_Clk)
     begin
         if rising_edge(i_Clk) then
             r_Switch_1 <= w_Switch_1;
-            
-            if (w_Switch_1 ='1' and r_Switch ='0') then
+
+            -- Increment counter when switch is pressed down
+            if (w_Switch_1 ='1' and r_Switch_1 ='0') then
                 if (r_Count = 9) then
-                    r_Count <= 0;
+                    r_Count <= 0;       -- Reset counter
                 else
-                    r_Count <= r_Count + 1;
+                    r_Count <= r_Count + 1;     -- Increment counter
                 end if;
             end if;
         end if;
