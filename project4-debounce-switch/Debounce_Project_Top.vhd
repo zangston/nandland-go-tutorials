@@ -17,6 +17,7 @@ architecture RTL of Debounce_Project_Top is
     signal w_Switch_1   : std_logic;
 
 begin
+    -- Instantiate debounce filter
     Debounce_Inst : entity work.Debounce_Switch
         port map (
                 i_Clk       => i_Clk,
@@ -25,10 +26,13 @@ begin
                 o_Switch_1  => w_Switch_1
         );
 
+    -- Toggle LED output when w_Switch_1 is released
     p_Register : process (i_Clk) is
     begin
         if rising_edge(i_Clk) then
-            r_Switch_1 <= w_Switch_1;
+            r_Switch_1 <= w_Switch_1;   -- Create a register
+
+            -- Look for falling edge on i_Switch_1 to toggle LED output
             if w_Switch_1 = '0' and r_Switch_1 = '1' then   
                 r_LED_1 <= not r_LED_1;
             end if;
