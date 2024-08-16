@@ -1,13 +1,13 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use iee.numeric_std.all;
+use ieee.numeric_std.all;
 
 entity Debounce_Switch is
     port(
         i_Clk    : in std_logic;
         i_Switch : in std_logic;
 
-        o_Switch : out std_logic;
+        o_Switch : out std_logic
     );
 end entity Debounce_Switch;
 

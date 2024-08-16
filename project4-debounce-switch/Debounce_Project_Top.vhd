@@ -21,9 +21,9 @@ begin
     Debounce_Inst : entity work.Debounce_Switch
         port map (
                 i_Clk       => i_Clk,
-                i_Switch_1  => i_Switch_1,
+                i_Switch  => i_Switch_1,
 
-                o_Switch_1  => w_Switch_1
+                o_Switch  => w_Switch_1
         );
 
     -- Toggle LED output when w_Switch_1 is released
