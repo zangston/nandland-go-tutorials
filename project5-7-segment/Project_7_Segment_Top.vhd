@@ -73,7 +73,8 @@ begin
             o_Segment_C     => w_Segment2_C,
             o_Segment_D     => w_Segment2_D,
             o_Segment_E     => w_Segment2_E,
-            o_Segment_F     => w_Segment2_G
+            o_Segment_F     => w_Segment2_F,
+            o_Segment_G     => w_Segment2_G
         );
 
     o_Segment2_A <= not w_Segment2_A;
